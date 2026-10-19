@@ -1,0 +1,50 @@
+project:
+  name: TapeStrip_Olink_AA_FFA
+  version: "0.1"
+  analysis_language: python
+
+expected_cohort:
+  AA_baseline: 20
+  AA_post_iJAK: 19
+  FFA: 22
+  HC: 11
+  total: 72
+
+olink:
+  platform: TO_CONFIRM
+  panel: TO_CONFIRM
+  number_of_proteins: TO_CONFIRM
+  measurement_scale: TO_CONFIRM
+  lod_available: TO_CONFIRM
+
+primary_contrasts:
+  - AA_baseline_vs_HC
+  - FFA_vs_HC
+  - AA_baseline_vs_post_iJAK_if_pairing_verified
+
+secondary_contrasts:
+  - AA_baseline_vs_FFA
+  - AA_post_iJAK_vs_HC
+  - shared_vs_disease_specific_programs
+
+multiple_testing:
+  method: Benjamini-Hochberg
+  fdr_threshold: 0.05
+
+longitudinal:
+  pairing: TO_CONFIRM_FROM_SOURCE_METADATA
+  model: TO_DEFINE_AFTER_PAIRING_AUDIT
+
+qc:
+  sample_qc: TO_DEFINE_FROM_OLINK_DOCUMENTATION
+  protein_qc: TO_DEFINE_FROM_OLINK_DOCUMENTATION
+  missingness_threshold: TO_DEFINE
+  lod_rule: TO_DEFINE
+
+covariates:
+  primary: TO_DEFINE_AFTER_METADATA_AUDIT
+
+reproducibility:
+  random_seed: 20260922
+  raw_data_immutable: true
+  analysis_freeze_required: true

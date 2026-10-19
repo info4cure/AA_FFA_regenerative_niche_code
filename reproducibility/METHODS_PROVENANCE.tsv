@@ -1,0 +1,29 @@
+field	value	status	source	action
+study_center	Reina Sofía University Hospital / IMIBIC / University of Córdoba	CONFIRMED	Allergy_2026	REUSE
+study_design	prospective single-center cohort	CONFIRMED_FOR_AA_SOURCE_COHORT	Allergy_2026	VERIFY_APPLICABILITY_TO_OLINK
+ethics_committee	Comité de Ética de la Investigación del Hospital Universitario Reina Sofía (Córdoba, Spain)	CONFIRMED	Allergy_2026	REUSE
+ethics_protocol	JAAK23	CONFIRMED	Allergy_2026+BJD_2026	REUSE
+declaration_helsinki	yes	CONFIRMED	Allergy_2026	REUSE
+written_informed_consent	yes	CONFIRMED	Allergy_2026	REUSE
+tape_product	D-Squame adhesive discs	CONFIRMED	Allergy_2026	REUSE_IF_SAME_SAMPLES
+tape_diameter_mm	22	CONFIRMED	Allergy_2026	REUSE_IF_SAME_SAMPLES
+AA_severity_measure	SALT	CONFIRMED	Allergy_2026	REUSE
+AA_JAK_inhibitor	baricitinib	CONFIRMED_FOR_PRIOR_COHORT	Allergy_2026	VERIFY_CURRENT_OLINK_COHORT
+baricitinib_dose	4 mg once daily	CONFIRMED_FOR_PRIOR_COHORT	Allergy_2026	VERIFY_CURRENT_OLINK_COHORT
+prior_response_definition	>=50% improvement in SALT	CONFIRMED_FOR_PRIOR_COHORT	Allergy_2026	DO_NOT_ASSUME_FOR_OLINK
+prior_treatment_duration	>=36 weeks	CONFIRMED_FOR_PRIOR_COHORT	Allergy_2026	DO_NOT_ASSUME_FOR_OLINK
+other_systemic_immunomodulators	excluded	CONFIRMED_FOR_PRIOR_COHORT	Allergy_2026	VERIFY_CURRENT_OLINK_COHORT
+HC_inflammatory_skin_history	none	CONFIRMED_FOR_PRIOR_COHORT	Allergy_2026	VERIFY_CURRENT_OLINK_COHORT
+RNA_extraction	RNeasy Micro Kit (Qiagen)	RNA_ONLY	Allergy_2026	DO_NOT_REUSE_FOR_OLINK
+protein_extraction	TO_CONFIRM	UNKNOWN	NA	RETRIEVE_OLINK_PROTOCOL
+number_of_tape_strips	TO_CONFIRM	UNKNOWN	NA	RETRIEVE_SOP
+application_pressure	TO_CONFIRM	UNKNOWN	NA	RETRIEVE_SOP
+application_duration	TO_CONFIRM	UNKNOWN	NA	RETRIEVE_SOP
+storage_temperature	TO_CONFIRM	UNKNOWN	NA	RETRIEVE_SOP
+FFA_diagnostic_criteria	TO_CONFIRM	UNKNOWN	NA	RETRIEVE_FFA_SOURCE
+FFA_activity_measure	TO_CONFIRM	UNKNOWN	NA	RETRIEVE_FFA_SOURCE
+planned_olink_product	Olink Target 96	PLANNED	Olink+Cobiomic_to_confirm	VERIFY_BEFORE_ASSAY
+planned_olink_panel	Olink Target 96 Inflammation	PLANNED	Olink+Cobiomic_to_confirm	VERIFY_BEFORE_ASSAY
+planned_panel_proteins	92	PLANNED	Olink_current_documentation	VERIFY_ASSAY_VERSION
+planned_output	NPX relative units	PLANNED	Olink_current_documentation	VERIFY_COBIOMIC_DELIVERY
+expected_samples	72	CONFIRMED	project_cohort	RECONCILE_BEFORE_ASSAY

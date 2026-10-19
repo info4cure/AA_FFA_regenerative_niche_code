@@ -1,0 +1,46 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# R
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors
+.vscode/
+.idea/
+*~
+*.swp
+*.swo
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+
+# Large/local analysis objects
+*.rds
+*.RDS
+*.h5
+*.h5ad
+*.loom
+
+# Model weights / caches
+.cache/
+models/
+external_models/
+
+# Credentials / local environment
+.env
+.env.*
